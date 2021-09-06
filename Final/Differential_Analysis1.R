@@ -15,7 +15,7 @@ source("plot_sig.R")
 # Load exampleData: SigEMD needs log2(TPM+1) as input data, which rows represents genes and columns represents samples. 
 #"condition" is also need. 
 
-load("exampleData.RData")
+load("Data.RData")
 data <- dataclean(data)
 databinary<- databin(data)
 names(condition) <- colnames(data)
